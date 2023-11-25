@@ -176,7 +176,7 @@ a:focus {
     height: 75px;
     display: flex;
     align-items: center;
-    background: #ffffff;
+    background: #959191;
 }
 
 .top-bar .logo {
@@ -186,9 +186,9 @@ a:focus {
 
 .top-bar .logo h1 {
     margin: -4px 0 0 0;
-    color: #E81C2E;
-    font-size: 50px;
-    line-height: 50px;
+    color: #dae81c;
+    font-size: 30px;
+    line-height: 30px;
     font-weight: 800;
     letter-spacing: 1px;
     font-style: italic;
@@ -226,7 +226,8 @@ a:focus {
 }
 
 .top-bar .top-bar-text {
-    padding-left: 15px;
+    padding-left: 10px;
+    color: #000;
 }
 
 .top-bar .top-bar-text h3 {
