@@ -176,7 +176,7 @@ a:focus {
     height: 75px;
     display: flex;
     align-items: center;
-    background: #959191;
+    background: #000;
 }
 
 .top-bar .logo {
@@ -195,7 +195,7 @@ a:focus {
 }
 
 .top-bar .logo h1 span {
-    color: #000000;
+    color: #fff;
 }
 
 .top-bar .logo img {
@@ -227,19 +227,21 @@ a:focus {
 
 .top-bar .top-bar-text {
     padding-left: 10px;
-    color: #000;
+    color: #fff;
 }
 
 .top-bar .top-bar-text h3 {
     margin: 0 0 5px 0;
     font-size: 18px;
     font-weight: 600;
+    color : yellow
 }
 
 .top-bar .top-bar-text p {
     margin: 0;
     font-size: 14px;
     font-weight: 400;
+    color : #fff;
 }
 
 @media (max-width: 991.98px) {
@@ -673,6 +675,7 @@ a:focus {
     font-size: 45px;
     font-weight: 700;
     text-transform: capitalize;
+    color : #000;
 }
 
 @media (max-width: 991.98px) {
