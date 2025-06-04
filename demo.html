@@ -90,7 +90,8 @@
                         imgElement.title = file.name;
                         
                         const linkElement = document.createElement('a');
-                        linkElement.href = file.webViewLink; // Link to Google Drive view page
+                       // linkElement.href = file.webViewLink; // Link to Google Drive view page
+                        linkElement.href = file.thumbnailLink; // Link to Google Drive view page
                         linkElement.target = '_blank';
                         linkElement.appendChild(imgElement);
                         
