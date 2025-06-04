@@ -82,20 +82,22 @@
 
                         // Construct a URL to directly display the image
                         // This format is generally good for direct viewing/embedding
-                        const imageUrl = `https://drive.google.com/uc?export=view&id=${file.id}`;
+                        //const imageUrl = `https://drive.google.com/uc?export=view&id=${file.id}`;
+                        const imageUrl = `${file.thumbnailLink}`;
 
                         const imgElement = document.createElement('img');
                         imgElement.src = imageUrl;
                         imgElement.alt = file.name;
                         imgElement.title = file.name;
-                        
-                        const linkElement = document.createElement('a');
+                        imageListDiv.appendChild(imgElement);
+                        // If you want to link to the Google Drive view page (webViewLink
+                        /*const linkElement = document.createElement('a');
                        // linkElement.href = file.webViewLink; // Link to Google Drive view page
                         linkElement.href = file.thumbnailLink; // Link to Google Drive view page
                         linkElement.target = '_blank';
                         linkElement.appendChild(imgElement);
                         
-                        imageListDiv.appendChild(linkElement);
+                        imageListDiv.appendChild(linkElement);*/
                     });
                 } else {
                     document.getElementById('status').innerText = 'No image files found in the folder, or the folder is not accessible with the provided API key/Folder ID.';
