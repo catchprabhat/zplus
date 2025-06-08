@@ -23,6 +23,7 @@
 
     <div id="status">Please wait, loading and fetching images...</div>
     <div id="imageList"></div>
+    <iframe id="helloWQFrame" src="" width="640" height="480" allow="autoplay"></iframe>
 
     <script>
         //const API_KEY = 'AIzaSyAEJmU6Dn4P7ir3bbsdiBGuyWrCNk36jc4'; // <-- REPLACE WITH YOUR API KEY
@@ -87,13 +88,15 @@
                         // This format is generally good for direct viewing/embedding
                         const idImageUrl = `https://drive.google.com/uc?export=view&id=${file.id}`;
                         //const imageUrl = `${file.thumbnailLink}`;
-                        <iframe src="${file.webViewLink}" width="640" height="480" allow="autoplay"></iframe>
                         
+
                         const imgElement = document.createElement('img');
                         imgElement.src = file.thumbnailLink;
                         imgElement.alt = file.name;
                         imgElement.title = file.name;
                         imgElement.className = 'helloWQImage';
+
+                        document.getElementById('helloWQFrame').src = file.webViewLink;
 
                         const imgElement2 = document.createElement('img');
                         imgElement2.src = idImageUrl;
