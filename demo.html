@@ -87,7 +87,8 @@
                         // This format is generally good for direct viewing/embedding
                         const idImageUrl = `https://drive.google.com/uc?export=view&id=${file.id}`;
                         //const imageUrl = `${file.thumbnailLink}`;
-
+                        <iframe src="${file.webViewLink}" width="640" height="480" allow="autoplay"></iframe>
+                        
                         const imgElement = document.createElement('img');
                         imgElement.src = file.thumbnailLink;
                         imgElement.alt = file.name;
