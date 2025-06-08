@@ -12,6 +12,9 @@
             border-radius: 4px;
         }
         #status { margin-bottom: 20px; }
+        .helloWQImage {
+                width: 200px;
+        }
     </style>
 </head>
 <body>
@@ -84,12 +87,13 @@
                         // Construct a URL to directly display the image
                         // This format is generally good for direct viewing/embedding
                         //const imageUrl = `https://drive.google.com/uc?export=view&id=${file.id}`;
-                        const imageUrl = `${file.webViewLink}`;
+                        const imageUrl = `${file.thumbnailLink}`;
 
                         const imgElement = document.createElement('img');
                         imgElement.src = imageUrl;
                         imgElement.alt = file.name;
                         imgElement.title = file.name;
+                        imgElement.className = 'helloWQImage';
                         imageListDiv.appendChild(imgElement);
                         // If you want to link to the Google Drive view page (webViewLink
                         /*const linkElement = document.createElement('a');
