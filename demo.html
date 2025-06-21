@@ -86,20 +86,24 @@
 
                         // Construct a URL to directly display the image
                         // This format is generally good for direct viewing/embedding
-                        const idImageUrl = `https://drive.google.com/uc?export=view&id=${file.id}`;
+                        const idImageUrl = 'https://drive.google.com/file/d/1Gd7HroSb1q8Y2QF4choFXtDaDme_SFjT/view?usp=drive_link';
+                        const idImageUrl2 = 'https://drive.google.com/file/d/1gMWjqJhLWcG01bYlicYMlnc6NSwoR5D9/view?usp=drive_link';
+                         //cosnt https://drive.google.com/uc?export=view&id=${file.id}
+                        //http://drive.google.com/uc?export=view&id=
+                        //https://drive.google.com/file/d/1gMWjqJhLWcG01bYlicYMlnc6NSwoR5D9/view?usp=drive_link
                         //const imageUrl = `${file.thumbnailLink}`;
                         
 
                         const imgElement = document.createElement('img');
-                        imgElement.src = file.thumbnailLink;
+                        imgElement.src = idImageUrl;
                         imgElement.alt = file.name;
                         imgElement.title = file.name;
                         imgElement.className = 'helloWQImage';
 
-                        document.getElementById('helloWQFrame').src = file.webViewLink;
+                        //document.getElementById('helloWQFrame').src = file.webViewLink;
 
                         const imgElement2 = document.createElement('img');
-                        imgElement2.src = idImageUrl;
+                        imgElement2.src = idImageUrl2;
                         imgElement2.alt = file.name;
                         imgElement2.title = file.name;
                         imgElement2.className = 'helloWQImage';
